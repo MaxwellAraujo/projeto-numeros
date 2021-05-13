@@ -1,0 +1,81 @@
+.text {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgba(50, 50, 50, alpha);
+}
+
+.titulo {
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0,8);
+    margin-top: 0;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+ }
+
+#valor {
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo {
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+#textarea {
+    resize: none;
+    width: 465px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    border: 4px solid;
+    margin: 20px;
+    padding: 15px 40px;
+    transition: 0.25s;
+ }
+
+button:hover, .pulse:focus {
+    color: #fff;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 0 #ef8f6e;
+    }
+}
+
+#numero {
+    width: 75%;
+    margin: 20px;
+    height: 25px;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
+    background-size: 400% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

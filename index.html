@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylo.css">
+  <title>Projeto Numeros</title>
+</head>    
+<body class="gradient">
+  <div class="conteudo">
+    <div class="titulo"><h1>Projeto Números</h1></div>
+      <div id="valor">
+        <input type="number" class="box" name="Ímpar" placeholder="digite um número.." id="numero">
+      </div>
+      <div>
+        <div class="botoes">
+          <button id="bot1" class="botoes" data-toggle="modal" data-target="#modalExempl" onclick="parimpar()">PAR / ÍMPAR</button>
+          <button id="bot2" class="botoes" data-toggle="modal" data-target="#modalExempl" onclick="primo()">PRIMO</button>
+          <button id="bot3" class="botoes" data-toggle="modal" data-target="#modalExempl" onclick="fibonacci()">FIBONACCI</button>
+          <button id="bot4" class="botoes" data-toggle="modal" data-target="#modalExempl" onclick="pin()">MÚLTIPLOS</button>
+        </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Resultado:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="res" class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="numeros.js"></script>
+</html>
