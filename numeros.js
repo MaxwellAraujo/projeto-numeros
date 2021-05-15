@@ -35,10 +35,10 @@ function parimpar() {
     bot1.setAttribute("data-target", "#modalExempl")
     bot2.setAttribute("data-target", "#modalExempl") 
     bot3.setAttribute("data-target", "#modalExempl") 
-    bot4.setAttribute("data-target", "#modalExempl")    
+    bot4.setAttribute("data-target", "#modalExempl") 
 }
 
-/**VERIFICAR PRIMO */
+/**VERIFICAR PRIMO*/
 function primo() {
 
     if (verificador(numero)) {
